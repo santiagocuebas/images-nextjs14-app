@@ -1,0 +1,38 @@
+.image {
+  box-shadow: 0 0 4px #777777;
+  @apply flex flex-col w-full m-auto bg-white overflow-hidden gap-y-5;
+
+  & .header {
+    @apply flex items-center p-3.5 bg-[#5383d3] text-white gap-1.5;
+
+    & svg { @apply flex-none; }
+
+    & h2 {
+      @apply w-full truncate text-[32px] leading-none;
+    }
+
+    & button {
+      @apply flex-none right-3 py-1.5 px-6 bg-[#e23434] text-[20px] font-bold leading-none gap-[5px] hover:bg-[#f23434];
+    }
+  }
+
+  & picture {
+    @apply flex-none mx-auto;
+
+    & img {
+      @apply w-full object-scale-down;
+    }
+  }
+
+  & .description {
+    @apply px-5 text-center;
+  }
+  
+  & .stats {
+    @apply flex justify-evenly p-5 bg-[#5383d3] text-white;
+  
+    & p {
+      @apply flex items-center text-center gap-1 leading-tight;
+    }
+  }
+}

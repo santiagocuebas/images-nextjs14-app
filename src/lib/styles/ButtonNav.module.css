@@ -1,0 +1,13 @@
+.link {
+  @apply flex items-center h-10 ml-auto px-6 rounded-lg text-[20px] font-bold text-white cursor-pointer;
+
+  &.notvisible { @apply hidden; }
+
+  &.green {
+    @apply bg-[#3ac614] hover:bg-[#3ad614];
+  }
+
+  &.violet {
+    @apply bg-[#b114c6] hover:bg-[#c114c6];
+  }
+}

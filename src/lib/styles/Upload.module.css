@@ -1,0 +1,38 @@
+.upload {
+  grid-column: 1 / span 2;
+  box-shadow: 0 0 4px #555555;
+  @apply w-full h-min bg-white;
+
+  & form {
+    grid-auto-rows: min-content;
+    @apply grid p-5 gap-3;
+  }
+
+  & input, textarea {
+    border: 1px solid #bbbbbb;
+    @apply w-full p-2.5 rounded;
+  }
+
+  & input[type='file'] { @apply hidden; }
+
+  & label {
+    outline: 1px solid #bbbbbb;
+    @apply flex w-[360px] h-[360px] m-auto rounded cursor-pointer;
+
+    & img {
+      @apply w-full h-full object-scale-down;
+    }
+  }
+
+  & .button {
+    @apply ml-auto py-2 px-6 font-bold gap-[5px] bg-[#63c187] hover:bg-[#63d187];
+
+    &[disabled] {
+      @apply bg-[#aaaaaa] text-[#555555] cursor-auto;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .upload { grid-column: 1 / span 3; }
+}

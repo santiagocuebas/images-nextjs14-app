@@ -1,0 +1,17 @@
+.recent {
+  box-shadow: 0 0 4px #555555;
+  @apply w-full h-min mt-5;
+
+  & div {
+    @apply flex justify-around h-min p-5 bg-white gap-[5px];
+  }
+  
+  & a {
+    box-shadow: 0 0 2px #777777;
+    @apply w-1/3 aspect-square;
+  }
+  
+  & img {
+    @apply w-full h-full object-cover object-center;
+  }
+}

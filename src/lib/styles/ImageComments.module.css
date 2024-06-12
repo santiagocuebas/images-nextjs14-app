@@ -1,0 +1,12 @@
+.comments {
+  box-shadow: 0 0 4px #777777;
+  @apply flex flex-col bg-white;
+
+  & h2 {
+    @apply flex items-center p-3.5 bg-[#5383d3] text-[32px] text-white leading-none gap-2;
+  }
+
+  & .list {
+    @apply flex flex-col p-2.5 gap-2.5;
+  }
+}

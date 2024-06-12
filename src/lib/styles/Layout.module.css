@@ -1,0 +1,3 @@
+.main {
+  @apply grid items-start justify-items-center w-full min-h-[calc(100vh-60px)] mt-[60px] py-5 bg-[#f0f4f8] gap-y-5;
+}

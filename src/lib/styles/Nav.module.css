@@ -1,0 +1,16 @@
+.nav {
+  box-shadow: 0 0 4px #555555;
+  @apply flex fixed items-center w-full min-w-[530px] py-2.5 px-5 top-0 bg-[#5383d3] z-[200];
+
+  & .link {
+    @apply w-40 h-10;
+  }
+  
+  & img {
+    @apply w-full h-full;
+  }
+  
+  & div {
+    @apply flex ml-auto gap-[5px];
+  }
+}

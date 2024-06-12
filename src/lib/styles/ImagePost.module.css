@@ -1,0 +1,26 @@
+.post {
+	box-shadow: 0 0 4px #777777;
+	@apply flex flex-col bg-white;
+
+	& h2 {
+		@apply flex relative items-center p-3.5 bg-[#5383d3] text-[32px] text-white leading-none gap-2;
+	}
+	
+	& .button {
+		@apply absolute justify-center right-5 p-2 rounded-full;
+	}
+}
+
+.form {
+  grid-auto-rows: min-content;
+  @apply grid p-2.5 gap-y-2.5;
+
+  & input, textarea {
+    border: 1px solid #bbbbbb;
+    @apply w-full py-2 px-4 rounded;
+  }
+
+  & .formButton {
+    @apply flex items-center py-2 px-4 ml-auto gap-1 bg-[#63c187] hover:bg-[#63d187];
+  }
+}

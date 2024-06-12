@@ -1,0 +1,14 @@
+.gallery {
+  box-shadow: 0 0 4px #555555;
+  @apply flex flex-col w-[90%] max-w-[1530px] min-w-[530px] h-full bg-white;
+
+  & svg { @apply flex-none }
+
+  & h2 {
+    @apply flex items-center p-3 bg-[#5383d3] text-[24px] text-white leading-none gap-2;
+  }
+
+  & div {
+    @apply flex flex-wrap items-start justify-center w-full p-5 gap-2.5;
+  }
+}

@@ -1,0 +1,12 @@
+.stats {
+  outline: 1px solid #999999;
+  @apply flex flex-col w-full p-5 rounded bg-white gap-2.5;
+
+  & h2 {
+    @apply flex items-center text-[24px] gap-[6px];
+  }
+  
+  & p {
+    @apply flex items-center w-full gap-[6px];
+  }
+}

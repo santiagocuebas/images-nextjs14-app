@@ -1,0 +1,22 @@
+.principal {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content 1fr;
+  @apply grid w-[90%] min-w-[480px] max-w-[1440px] h-fit;
+}
+
+.sidebar {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+  @apply flex flex-col w-full pl-5 gap-y-2.5;
+}
+
+.recent {
+  grid-column: 1 / span 2;
+  @apply self-start;
+}
+
+@media (max-width: 1040px) {
+  .sidebar { @apply hidden; }
+
+  .recent { grid-column: 1 / span 3; }
+}

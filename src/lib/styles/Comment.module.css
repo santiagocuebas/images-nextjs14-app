@@ -1,0 +1,14 @@
+.comment {
+  grid-template-columns: 45px 1fr;
+  @apply grid w-full rounded gap-x-2.5 gap-y-[5px];
+
+  & img {
+    grid-row: 1 / span 3;
+    box-shadow: 0 0 3px #000000;
+    @apply w-[45px] h-[45px];
+  }
+
+  & .createdAt {
+    @apply w-max ml-auto;
+  }
+}

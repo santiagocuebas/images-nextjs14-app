@@ -1,0 +1,20 @@
+.alert {
+	@apply grid fixed justify-center items-start w-full min-h-full top-0 bottom-0 left-0 pt-[130px] bg-[#000000af] z-[1000];
+
+	& div {
+		box-shadow: 0 0 4px #555555;
+		@apply flex flex-wrap justify-center w-[400px] p-5 rounded-lg bg-white font-bold gap-2 [&_p]:text-center [&_p]:text-[24px];
+	}
+
+	& button {
+		@apply w-fit m-auto py-2 px-6 rounded-lg text-[20px] font-bold;
+
+		&.cancel {
+			@apply bg-[#f04425] hover:bg-[#ff4425];
+		}
+
+		&.accept {
+			@apply bg-[#4588b6] hover:bg-[#4588c6];
+		}
+	}
+}

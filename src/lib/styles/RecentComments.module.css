@@ -1,0 +1,26 @@
+.comments {
+  box-shadow: 0 0 4px #555555;
+  @apply w-full h-min mt-2.5;
+}
+
+.list {
+  @apply flex flex-wrap justify-around h-min p-5 bg-white gap-2.5;
+}
+
+.content {
+  grid-template-columns: 100px 1fr;
+  grid-auto-rows: 1fr;
+  @apply grid w-full gap-5;
+
+  & img {
+    grid-row: 1 / span 2;
+    box-shadow: 0 0 2px #777777;
+    @apply w-[100px] h-[100px] object-cover;
+  }
+}
+
+.data { @apply text-[20px]; }
+
+.footer {
+  @apply self-end justify-self-end text-[#666666];
+}
