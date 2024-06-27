@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaImage, FaEye, FaRegClock } from "react-icons/fa";
 import { format } from "timeago.js";
 import { Alert } from './index';
+import { DIR } from "../config";
 import styles from '../styles/ImageContent.module.css';
 
 export default function ImageContent({ image }: ContentProp) {
@@ -24,7 +25,7 @@ export default function ImageContent({ image }: ContentProp) {
 				</div>
 				<picture>
 					<Image
-						src={image.filename}
+						src={DIR + '/' + image.filename}
 						alt={image.title}
 						width={100}
 						height={100}

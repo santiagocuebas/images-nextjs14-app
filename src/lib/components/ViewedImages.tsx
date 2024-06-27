@@ -3,6 +3,7 @@ import type { ImagesProp } from "../types/props";
 import Link from "next/link";
 import Image from "next/image";
 import { FaImages } from "react-icons/fa";
+import { DIR } from "../config";
 import styles from '../styles/ViewedImages.module.css';
 
 export default function ViewedImages({ images }: ImagesProp) {
@@ -19,7 +20,7 @@ export default function ViewedImages({ images }: ImagesProp) {
                 images.map((image: IImage) => (
 									<Link href={'/gallery/' + image.uniqueId} key={image.uniqueId}>
 										<Image 
-											src={image.filename}
+											src={DIR + '/' + image.filename}
 											alt={image.title}
 											width={100}
 											height={100}

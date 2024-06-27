@@ -1,30 +1,29 @@
-# imgShare
-imgShare is a web application to share images, comments, and more.
+# NJImages
+NJImages es una aplicación web, basada en [este proyecto](https://github.com/fazt/nodejs-imgshare), con las que puedes compartir imagenes y comentarios.
 
-## Environment Variables
-### Client
-* `PORT`, the http client port, default is `3000`.
-### Server
-- `PORT` the http server port. By default is `4200`.
-- `MONGODB_URI`, the mongodb database uri.
-- `ORIGEN`, the http client port.
+## Variables
+### Cliente
+- `NEXT_PUBLIC_DIR`, la dirección http del servidor.
+### Servidor
+- `PORT`, el puerto del servidor, por default es `4200`.
+- `ORIGIN`, la dirección http del cliente.
+- `MONGO_URI`, la dirección de mongodb.
 
-## Installation
+## Instalación Manual
 ```
-git clone https://github.com/satiagocuebas/images-nextjs-app
-cd images-nextjs-app
-cd backend
-pnpm install
-npm run build
-npm start
-cd frontend
-pnpm install
-npm start
+git clone -b njimages-local --single-branch https://github.com/santiagocuebas/images-next14-app
+cd images-next14-app
+pnpm run todo
+
+git clone -b images-api-local --single-branch https://github.com/santiagocuebas/nodejs-images-api 
+cd nodejs-images-api 
+pnpm run todo
 ```
 
-## Resources
+## Recursos
 - Node.js
 - Express
 - MongoDB
-- Typescript
+- TypeScript
 - Nextjs
+- Tailwind.css

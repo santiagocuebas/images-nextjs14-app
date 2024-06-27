@@ -29,5 +29,5 @@ export default function Alert({ id, alert }: AlertProp) {
 				</button>
 			</div>
 		</div>
-	)
+	);
 }

@@ -1,6 +1,7 @@
 import type { IImage } from '@/lib/types/global';
 import { FaImages } from 'react-icons/fa';
 import axios from '@/lib/axios';
+import { DIR } from '@/lib/config';
 import { Image } from '@/lib/components';
 import styles from '@/lib/styles/Gallery.module.css';
 
@@ -25,7 +26,7 @@ export default async function Gallery() {
 				{
 					data.images.map(image => (
 						<Image
-							key={image.uniqueId}
+							key={DIR + '/' + image.uniqueId}
 							id={image.uniqueId}
 							filename={image.filename}
 							alt={image.title}

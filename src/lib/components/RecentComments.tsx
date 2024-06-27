@@ -3,6 +3,7 @@ import type { CommentsProp } from "../types/props";
 import { format } from "timeago.js";
 import Image from "next/image";
 import { FaComments } from "react-icons/fa";
+import { DIR } from "../config";
 import styles from '../styles/RecentComments.module.css';
 
 export default function RecentComments({ comments }: CommentsProp) {
@@ -19,7 +20,7 @@ export default function RecentComments({ comments }: CommentsProp) {
               comments.map((comment: IComment) => (
                 <div className={styles.content} key={comment._id}>
                   <Image 
-                    src={comment.filename}
+                    src={DIR + '/' + comment.filename}
                     alt={comment.name}
                     width={100}
                     height={100}

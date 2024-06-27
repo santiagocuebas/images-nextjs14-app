@@ -3,6 +3,7 @@ import type { ImagesProp } from "@/lib/types/props";
 import Link from "next/link";
 import Image from "next/image";
 import { FaImages } from 'react-icons/fa';
+import { DIR } from "../config";
 import styles from '@/lib/styles/RecentUploads.module.css';
 
 export default function RecentUploads({ images }: ImagesProp) {
@@ -19,7 +20,7 @@ export default function RecentUploads({ images }: ImagesProp) {
 								images.map((image: IImage) => (
 									<Link href={'/gallery/' + image.uniqueId} key={image.uniqueId}>
 										<Image 
-											src={image.filename}
+											src={DIR + '/' + image.filename}
 											alt={image.title}
 											width={100}
 											height={100}
